@@ -543,3 +543,58 @@ body.dark-mode #scrollToTop {
   font-size: 2rem;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 160px;
+  }
+
+  .profile-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-text p {
+    font-size: 1.1rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .btn-download {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 10px 15px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
