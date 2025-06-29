@@ -1,0 +1,545 @@
+/* === Base Styles === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #008080;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+nav a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  color: white;
+  text-decoration:lab(from color l a b);
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #005f5f;
+}
+
+section {
+  padding: 2rem;
+  background: white;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* === Dark Mode === */
+body.dark-mode {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode section {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 10px #333;
+}
+
+body.dark-mode .contact-form {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+/* === Profile Header === */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile-text h1,
+.profile-text p {
+  margin: 0;
+  color: white;
+}
+
+.profile-text h1 {
+  font-size: 2rem;
+}
+
+.profile-text p {
+  font-size: 1.4rem;
+}
+
+/* === Theme Toggle === */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* === Card Style === */
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+body.dark-mode .card {
+  background: #1e1e1e;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+/* === Download Button === */
+.btn-download {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  color: white;
+  text-decoration:lab(from color l a b) ;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #005f5f;
+}
+
+/* === Social Links === */
+.social-links a {
+  margin: 0 10px;
+  color: #008080;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #00ffff;
+  font-size: 1.5rem;
+  border: 2px solid #00ffff;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #00ffff;
+  color: #111;
+}
+
+/* === About Card === */
+.about-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.about-section h2 {
+  margin-bottom: 1rem;
+  color: #00aaaa;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Optional dark mode support */
+body.dark-mode .about-section {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+/* === Certificates Card === */
+.certificates-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+.certificates-section h2{
+  color: #00aaaa;
+}
+
+.certificate-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-card h3 {
+  margin-bottom: 0.5rem;
+  color: #008080;
+}
+
+.certificate-card p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.certificate-card a {
+  color: #008080;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.certificate-card a:hover {
+  color: #005f5f;
+}
+
+/* Dark mode support */
+body.dark-mode .certificate-card {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .certificate-card a {
+  color: #00cccc;
+}
+
+/* === Projects Card === */
+.projects-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.projects-section h2 {
+  color: #00aaaa;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: #008080;
+}
+
+.project-card p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Add link styles inside projects if you use links */
+.project-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  color: #008080;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.project-links a:hover {
+  color: #005f5f;
+}
+
+body.dark-mode .project-links a {
+  color: #00cccc;
+}
+
+
+/* === Dark Mode Support === */
+body.dark-mode .project-card {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .project-card a {
+  color: #00cccc;
+}
+
+
+/* === Information Card === */
+.information-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.information-section h2{
+  color: #00aaaa;
+}
+
+.info-block {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.info-block h3 {
+  margin-bottom: 1rem;
+  color: #008080;
+}
+
+.info-block ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.info-block li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.date-range {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Dark mode support */
+body.dark-mode .info-block {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .date-range {
+  color: #ccc;
+}
+
+/* === Experience Form === */
+#experience {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.experience-section h2 {
+  color: #00aaaa;
+}
+
+.experience-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.experience-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-block ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.experience-block li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.experience-card h3 {
+  margin-bottom: 0.5rem;
+  color: #008080;
+}
+
+.experience-card p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Dark mode */
+body.dark-mode .experience-card {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+/* === Contact Form === */
+.contact-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.contact-section h2{
+  color: #00aaaa;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  max-height: 300px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #005f5f;
+}
+
+/* Dark Mode Support */
+body.dark-mode .contact-form {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+  background-color: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+body.dark-mode .contact-form button {
+  background-color: #00aaaa;
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 20%;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollToTop:hover {
+  background-color: #005f5f;
+  transform: scale(1.1);
+}
+
+body.dark-mode #scrollToTop {
+  background-color: #00aaaa;
+  color: #111;
+}
+#scrollToTop i {
+  font-size: 2rem;
+  font-weight: bold;
+}
