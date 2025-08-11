@@ -495,6 +495,17 @@ body.dark-mode .date-range {
   font-size: 0.9rem;
 }
 
+.experience-block a {
+  color: #008080;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.experience-block a:hover {
+  color: #005f5f;
+}
+
 /* Dark mode support */
 body.dark-mode .experience-block {
   background-color: #1e1e1e;
@@ -504,6 +515,10 @@ body.dark-mode .experience-block {
 
 body.dark-mode .date-range {
   color: #ccc;
+}
+
+body.dark-mode .experience-block a {
+  color: #00cccc;
 }
 
 /* === Contact Form === */
